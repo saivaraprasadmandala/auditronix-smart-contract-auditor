@@ -141,7 +141,7 @@ Here’s a quick walkthrough of the **Auditronix - AI Smart Contract Auditor** i
 ### 📄 5. Export PDF Report
 > Generate and download a professional audit report with one click.
 ![PDF Export](https://github.com/user-attachments/assets/4107261a-e48a-4646-bd9e-967ef8161a5d)
-🔗 [View Full PDF Report](./docs/audit-report.pdf)
+🔗 [View Full PDF Report](./auditronix-report-2025-07-09.pdf)
 ---
 
 ### Analysis Capabilities
