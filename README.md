@@ -1,6 +1,6 @@
 # 🔍 Auditronix - AI Smart Contract Auditor
-
-An AI-powered smart contract auditing tool built with Next.js 14, Tailwind CSS, and Framer Motion. Powered by LLaMA-3-70B for comprehensive security analysis.
+[![Landing Page](https://github.com/user-attachments/assets/2cc2caf1-d44a-406e-9739-09ca60135aa8)](https://auditronix-smart-contract-auditor.builtforthis.tech/)
+An AI-powered smart contract auditing tool built with Next.js, Tailwind CSS, and Framer Motion. Powered by LLaMA-3-70B for security analysis.
 
 ## ✨ Features
 
@@ -91,7 +91,7 @@ The app uses Together AI's LLaMA-3-70B model for smart contract analysis. The AP
 ## 🎨 Customization
 
 ### Styling
-- Built with Tailwind CSS
+- Built with NextJS,Tailwind CSS
 - Dark theme by default
 - Custom color palette with emerald accents
 - Responsive design for all devices
@@ -112,6 +112,37 @@ The app uses Together AI's LLaMA-3-70B model for smart contract analysis. The AP
 - **Business Logic**: Logic correctness
 - **Upgradability**: Proxy patterns
 - **Documentation**: Comments and clarity
+- 
+## 📸 Screenshots & Walkthrough
+Here’s a quick walkthrough of the **Auditronix - AI Smart Contract Auditor** in action:
+### 🔧 1. Landing Page
+> Elegant and modern UI with quick access to the contract editor and audit dashboard
+![Landing Page](https://github.com/user-attachments/assets/8382d2e2-7685-46dd-b7e3-b36d17e402c3)
+---
+
+### 🧠 2. Smart Contract Editor
+> Write or paste your Solidity smart contract here. Supports syntax highlighting and instant editing.
+![Editor](https://github.com/user-attachments/assets/7c3fd52d-13da-4315-bfd6-d80787a597a4)
+---
+
+### ⚙️ 3. Real-Time AI Audit
+> On hitting "Run AI Audit", the system analyzes your contract using **LLaMA-3-70B** and returns detailed results.
+![Audit Results](https://github.com/user-attachments/assets/cef4caf7-c154-4ac8-a374-0c20f8bfb41a)
+![Audit Results-2](https://github.com/user-attachments/assets/7527c1b3-8425-4c60-83e3-0ac3219ee062)
+---
+
+### 📊 4. Security Metrics Dashboard
+> Displays insights like vulnerabilities, gas efficiency, code quality, and access control.
+![Dashboard](https://github.com/user-attachments/assets/c1f5674a-dfbc-4219-8ccf-53513ebaae03)
+![Dashboard-2](https://github.com/user-attachments/assets/d605463a-40f6-47c9-abad-a694d938dbdc)
+![Dashboard-3](https://github.com/user-attachments/assets/2a7430f7-6486-4da5-b753-20b246b50821)
+---
+
+### 📄 5. Export PDF Report
+> Generate and download a professional audit report with one click.
+![PDF Export](https://github.com/user-attachments/assets/4107261a-e48a-4646-bd9e-967ef8161a5d)
+🔗 [View Full PDF Report](./docs/audit-report.pdf)
+---
 
 ### Analysis Capabilities
 - Real-time vulnerability detection
@@ -128,27 +159,17 @@ The app uses Together AI's LLaMA-3-70B model for smart contract analysis. The AP
 3. Add environment variables in Vercel dashboard
 4. Deploy automatically
 
-### Other Platforms
-The app can be deployed to any platform that supports Next.js:
-- Netlify
-- Railway
-- DigitalOcean App Platform
-- AWS Amplify
-
-## 🤝 Contributing
-
+## Contributing
+We welcome contributions! Please follow these steps:
 1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Test thoroughly
-5. Submit a pull request
+2. Create a feature branch (`git checkout -b feature/your-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin feature/your-feature`)
+5. Open a Pull Request
 
-## 📝 License
 
-This project is licensed under the MIT License.
 
 ## 🆘 Support
-
 If you encounter any issues:
 1. Check the environment variables are set correctly
 2. Ensure your Together AI API key is valid
@@ -156,12 +177,11 @@ If you encounter any issues:
 4. Check the console for error messages
 
 ## 🔗 Links
-
 - [Together AI](https://api.together.xyz) - Get your API key
 - [Next.js Documentation](https://nextjs.org/docs)
 - [Tailwind CSS](https://tailwindcss.com)
 - [shadcn/ui](https://ui.shadcn.com)
-
 ---
 
-Built with ❤️ using Next.js 14, Tailwind CSS, and AI
+⭐ If you found this project useful, consider giving it a star on GitHub!
+
