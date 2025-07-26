@@ -1,6 +1,6 @@
-# 🔍 Auditronix - AI Smart Contract Auditor
+# Auditronix - Solidity Smart Contract Auditor
 [![Landing Page](https://github.com/user-attachments/assets/2cc2caf1-d44a-406e-9739-09ca60135aa8)](https://auditronix-smart-contract-auditor.builtforthis.tech/)
-An AI-powered smart contract auditing tool built with Next.js, Tailwind CSS, and Framer Motion. Powered by LLaMA-3-70B for security analysis.
+An AI-powered smart contract auditing tool built with Next.js, Tailwind CSS, and ShadCN UI. Powered by LLaMA-3-70B for security analysis.
 
 ## ✨ Features
 
@@ -10,6 +10,17 @@ An AI-powered smart contract auditing tool built with Next.js, Tailwind CSS, and
 - **📄 Professional PDF Reports**: Exportable audit reports with proper formatting
 - **🎨 Modern UI**: Beautiful, responsive interface with smooth animations
 - **🔧 Live Demo**: Interactive contract editor with real-time analysis
+- **📦 NPM CLI Package**: Audit contracts directly from your terminal with the `auditronix-cli` package.
+
+## 💻 Auditronix CLI Package
+
+For developers who prefer the command line, Auditronix is also available as a powerful, standalone NPM package. Get the same AI-powered analysis directly in your terminal.
+
+### Installation
+- Install the package globally using npm:
+```bash
+npm install -g auditronix-cli
+```
 
 ## 🚀 Quick Start
 
@@ -141,7 +152,7 @@ Here’s a quick walkthrough of the **Auditronix - AI Smart Contract Auditor** i
 ### 📄 5. Export PDF Report
 > Generate and download a professional audit report with one click.
 ![PDF Export](https://github.com/user-attachments/assets/4107261a-e48a-4646-bd9e-967ef8161a5d)
-🔗 [View Full PDF Report](./auditronix-report-2025-07-09.pdf)
+🔗 [View Full PDF Report](https://drive.google.com/file/d/1Qah2_nKIDqcTt10cJ5-CJOneqHFAHtEV/view?usp=sharing)
 ---
 
 ### Analysis Capabilities
