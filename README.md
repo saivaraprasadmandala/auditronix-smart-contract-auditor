@@ -35,7 +35,7 @@ npm install -g auditronix-cli
 1. **Clone the repository**
 
    ```bash
-   git clone https://github.com/your-repo/auditronix.git
+   git clone https://github.com/saivaraprasadmandala/auditronix-smart-contract-auditor.git
    cd auditronix
 
 2. **Install dependencies**
