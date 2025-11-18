@@ -14,13 +14,31 @@ An AI-powered smart contract auditing tool built with Next.js, Tailwind CSS, and
 
 ## 💻 Auditronix CLI Package
 
+[![NPM Package](https://img.shields.io/npm/v/auditronix-cli?style=flat-square&logo=npm)](https://www.npmjs.com/package/auditronix-cli)
+[![NPM Downloads](https://img.shields.io/npm/dm/auditronix-cli?style=flat-square)](https://www.npmjs.com/package/auditronix-cli)
+
 For developers who prefer the command line, Auditronix is also available as a powerful, standalone NPM package. Get the same AI-powered analysis directly in your terminal.
 
+🔗 **[View on NPM](https://www.npmjs.com/package/auditronix-cli)**
+
 ### Installation
-- Install the package globally using npm:
+Install the package globally using npm:
 ```bash
 npm install -g auditronix-cli
 ```
+
+### Usage
+After installation, audit any Solidity contract directly from your terminal:
+```bash
+auditronix path/to/your/contract.sol
+```
+
+### CLI Features
+- ⚡ **Fast Analysis**: Quick security audits from command line
+- 🛡️ **Same AI Power**: Uses the same LLaMA-3-70B model as the web version
+- 📊 **Detailed Reports**: Comprehensive security metrics and suggestions
+- 🔧 **Developer Friendly**: Perfect for CI/CD pipelines and automated workflows
+- 📁 **Batch Processing**: Audit multiple contracts at once
 
 ## 🚀 Quick Start
 
@@ -188,6 +206,7 @@ If you encounter any issues:
 4. Check the console for error messages
 
 ## 🔗 Links
+- [Auditronix CLI on NPM](https://www.npmjs.com/package/auditronix-cli) - Command-line version
 - [Together AI](https://api.together.xyz) - Get your API key
 - [Next.js Documentation](https://nextjs.org/docs)
 - [Tailwind CSS](https://tailwindcss.com)
