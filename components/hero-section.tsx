@@ -7,7 +7,7 @@ import Link from "next/link"
 
 export function HeroSection() {
   return (
-    <section className="relative flex items-center justify-center min-h-screen overflow-hidden">
+    <section className="flex overflow-hidden relative justify-center items-center min-h-screen">
       {/* Animated gradient background */}
       <div className="absolute inset-0 bg-gradient-to-br from-zinc-900 via-zinc-800 to-emerald-900/20">
         <motion.div
@@ -24,16 +24,18 @@ export function HeroSection() {
       </div>
 
       {/* Floating Ethereum Logo */}
-      <div className="absolute top-20 right-20">
-        <EthereumLogo />
+      <div className="absolute right-4 top-10 opacity-50 sm:top-20 sm:right-20 sm:opacity-100">
+        <div className="scale-50 sm:scale-75 md:scale-100">
+          <EthereumLogo />
+        </div>
       </div>
 
-      <div className="relative z-10 max-w-4xl px-6 mx-auto text-center">
+      <div className="relative z-10 px-4 mx-auto max-w-4xl text-center sm:px-6">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="mb-6 text-6xl font-bold text-transparent md:text-7xl bg-gradient-to-r from-white to-emerald-400 bg-clip-text"
+          className="mb-4 text-3xl font-bold leading-tight text-transparent bg-clip-text bg-gradient-to-r from-white to-emerald-400 sm:mb-6 sm:text-4xl md:text-6xl lg:text-7xl"
         >
           Auditronix: AI Smart Contract Auditor
         </motion.h1>
@@ -42,7 +44,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
-          className="max-w-2xl mx-auto mb-8 text-xl md:text-2xl text-zinc-300"
+          className="px-2 mx-auto mb-6 max-w-2xl text-lg sm:mb-8 sm:text-xl md:text-2xl text-zinc-300"
         >
           Automated security analysis for Solidity contracts
         </motion.p>
@@ -51,13 +53,25 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
+          className="flex flex-col gap-3 justify-center items-center mx-auto max-w-md sm:flex-row sm:gap-4 sm:max-w-none"
         >
+          <Button
+            onClick={() => {
+              const liveDemoSection = document.querySelector('[data-section="live-demo"]')
+              if (liveDemoSection) {
+                liveDemoSection.scrollIntoView({ behavior: 'smooth', block: 'start' })
+              }
+            }}
+            className="px-6 py-2.5 sm:px-8 sm:py-4 text-sm sm:text-base lg:text-lg font-semibold text-white transition-all duration-300 rounded-lg bg-emerald-500 hover:bg-emerald-600 hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/25"
+          >
+            Try Demo
+          </Button>
           <Link href="/dashboard">
             <Button
-              size="lg"
-              className="px-8 py-4 text-lg font-semibold text-white transition-all duration-300 rounded-lg bg-emerald-500 hover:bg-emerald-600 hover:scale-105 hover:shadow-lg hover:shadow-emerald-500/25"
+              variant="outline"
+              className="px-6 py-2.5 sm:px-8 sm:py-4 text-sm sm:text-base lg:text-lg font-semibold text-emerald-400 border-emerald-400 hover:bg-emerald-400 hover:text-white transition-all duration-300 rounded-lg hover:scale-105"
             >
-              Try Demo
+              View Dashboard
             </Button>
           </Link>
         </motion.div>

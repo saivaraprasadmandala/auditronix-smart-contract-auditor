@@ -52,7 +52,7 @@ export function Scorecards({ metrics = [] }: ScorecardsProps) {
   const displayMetrics = metrics.length > 0 ? metrics : defaultScores
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6">
       {displayMetrics.slice(0, 8).map((metric, index) => {
         const Icon = iconMap[metric.metric] || Shield
         const color = colorMap[metric.metric] || "emerald"
@@ -67,18 +67,18 @@ export function Scorecards({ metrics = [] }: ScorecardsProps) {
             whileHover={{ scale: 1.05 }}
           >
             <Card className="bg-zinc-800 border-zinc-700 h-full">
-              <CardHeader className="pb-2">
-                <CardTitle className="text-white text-sm font-medium flex items-center gap-2">
-                  <Icon className="w-4 h-4" />
-                  <span className="truncate">{metric.metric}</span>
+              <CardHeader className="pb-2 px-4 sm:px-6">
+                <CardTitle className="text-white text-xs sm:text-sm font-medium flex items-center gap-2">
+                  <Icon className="w-3 h-3 sm:w-4 sm:h-4 flex-shrink-0" />
+                  <span className="truncate text-xs sm:text-sm">{metric.metric}</span>
                 </CardTitle>
                 {(metric as any).description && (
-                  <p className="text-xs text-zinc-500 mt-1">{(metric as any).description}</p>
+                  <p className="text-xs text-zinc-500 mt-1 line-clamp-2">{(metric as any).description}</p>
                 )}
               </CardHeader>
-              <CardContent>
-                <div className="relative w-20 h-20 mx-auto mb-4">
-                  <svg className="w-20 h-20 transform -rotate-90" viewBox="0 0 100 100">
+              <CardContent className="px-4 sm:px-6">
+                <div className="relative w-16 h-16 sm:w-20 sm:h-20 mx-auto mb-3 sm:mb-4">
+                  <svg className="w-16 h-16 sm:w-20 sm:h-20 transform -rotate-90" viewBox="0 0 100 100">
                     <circle
                       cx="50"
                       cy="50"
@@ -106,7 +106,7 @@ export function Scorecards({ metrics = [] }: ScorecardsProps) {
                   </svg>
                   <div className="absolute inset-0 flex items-center justify-center">
                     <motion.span
-                      className="text-xl font-bold text-white"
+                      className="text-lg sm:text-xl font-bold text-white"
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       transition={{ delay: 1 + index * 0.2 }}
@@ -115,7 +115,7 @@ export function Scorecards({ metrics = [] }: ScorecardsProps) {
                     </motion.span>
                   </div>
                 </div>
-                <p className="text-center text-zinc-400 text-sm">{metric.score}/10</p>
+                <p className="text-center text-zinc-400 text-xs sm:text-sm">{metric.score}/10</p>
               </CardContent>
             </Card>
           </motion.div>

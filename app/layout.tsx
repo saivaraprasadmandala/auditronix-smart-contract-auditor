@@ -6,7 +6,6 @@ import "./globals.css"
 export const metadata: Metadata = {
   title: "Auditronix - AI Smart Contract Auditor",
   description: "Automated security analysis for Solidity contracts",
-    generator: 'v0.dev'
 }
 
 export default function RootLayout({
